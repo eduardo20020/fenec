@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($resultado["rol"]=="admin") {
             // Si el usuario existe, redireccionamos a la página de bienvenida
-            header("Location: ../public/Admin.php");
+            header("Location: ../dashboard.php");
             exit;
         }else if($resultado["rol"]=="alumno"){
             header("Location: ../public/Alumno.php");
