@@ -30,7 +30,7 @@
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-                <p class="mt-3 text-center">¿Ya tienes una cuenta? <a href="php/registro.php">Inicia sesión aquí</a></p>
+                <p class="mt-3 text-center">¿No tienes una cuenta? <a href="php/registro.php">Registrate aquí</a></p>
             </form>
         </div>
     </div>

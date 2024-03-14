@@ -33,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->execute([$usuario, $password, $rol]);
     if ($stmt->rowCount() > 0) {
         echo "Registro exitoso.";
+        header("location: ../index.php");
     } else {
         echo "Error al registrar el usuario.";
     }
