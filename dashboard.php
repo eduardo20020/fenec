@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="CSS/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #uno{
 
+        }
+        #dos{
+            
+        }
+        #tres{
+            
+        }
+        #cuatro{
+            
+        }
+        #cinco{
+            
+        }
+    </style>
    
     <title>Document</title>
 </head>
@@ -157,5 +173,20 @@ window.addEventListener('scroll', () => {
 });
 }
 </script>
+
+
+
+    <div class="container">
+
+    <div class="uno"></div>
+    <div class="dos"></div>
+    <div class="tres"></div>
+    <div class="cuatro"></div>
+    <div class="cinco"></div>
+
+
+    </div>
+
+
 </body>
 </html>
