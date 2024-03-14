@@ -172,6 +172,38 @@
   }
 </script>
 
+
+<script>
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      alert("Presionaste la tecla Enter");
+    }
+  });
+</script>
+
+
+
+<script>
+  setTimeout(function() {
+    alert("Han pasado 5 segundos");
+  }, 5000);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Bootstrap JS (opcional, si necesitas funcionalidades de Bootstrap que requieran JavaScript) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
