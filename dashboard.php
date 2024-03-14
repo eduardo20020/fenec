@@ -35,6 +35,10 @@
      
     <?php require "PHP/navbar.php" ?>
 
+    <div class="container">
+        <h1>BIENVENIDO ADMIN</h1>
+    </div>
+
 
        
         <div class="content">

@@ -12,6 +12,8 @@
 </head>
 <body class="container">
 
+<h1>BIENVENIDO ALUMNO</h1>
+
 <h1 class="mt-5">Ejemplo JavaScript con Bootstrap</h1>
 
 <!-- Manipulación del DOM -->
