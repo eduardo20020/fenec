@@ -52,7 +52,7 @@
         </div>
     </div>
     <ul class="frappes">
-        <li><a href="../INDEX.php"><img src="img/ISOTIPO (2).png" onclick="imgSlider('../img/LOGO_BLANCO.png');"></a></li>
+        <li><a href="#"><img src="img/ISOTIPO (2).png" onclick="imgSlider('../img/LOGO_BLANCO.png');"></a></li>
         <li><a href="../PUBLIC/planes.HTML"><img src="img/ISOTIPO (2).png" onclick="imgSlider('../img/LOGO_BLANCO.png'); changecirclecolor('#ec7f39');changeText('Cant Get You out of My HeadS', 'english', 'HOLA', 'Nuevo Enlace');"></a></li>
         <li><a href="#"><img src="img/ISOTIPO (2).png" onclick="imgSlider('../img/LOGO_BLANCO.png'); changecirclecolor('bluesky');changeText('Way Down We Go SIMEPRESS ', 'TEACHER', 'Nuevo Span', 'Nuevo Enlace');"></a></li>
     </ul>
