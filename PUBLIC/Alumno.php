@@ -3,22 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ejemplo JavaScript</title>
+<title>Ejemplo JavaScript con Bootstrap</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 <style>
-  body { font-family: Arial, sans-serif; }
-  button { padding: 10px 20px; cursor: pointer; }
+  /* Estilos adicionales si los necesitas */
 </style>
 </head>
-<body>
+<body class="container">
 
-<h1>Ejemplo JavaScript</h1>
+<h1 class="mt-5">Ejemplo JavaScript con Bootstrap</h1>
 
 <!-- Manipulación del DOM -->
-<button onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
-<ul id="lista">
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
+<button class="btn btn-primary" onclick="cambiarColorFondo()">Cambiar Color de Fondo</button>
+<ul id="lista" class="list-group mt-3">
+  <li class="list-group-item">Elemento 1</li>
+  <li class="list-group-item">Elemento 2</li>
+  <li class="list-group-item">Elemento 3</li>
 </ul>
 
 <!-- Funciones -->
@@ -32,11 +33,11 @@
 <!-- Bucles -->
 <script>
   var numeros = [1, 2, 3, 4, 5];
-  document.write("<p>Números del 1 al 5:</p>");
-  document.write("<ul>");
+  document.write("<p class='mt-3'>Números del 1 al 5:</p>");
+  document.write("<ul class='list-group'>");
   // Bucle for para escribir los números en una lista
   for (var i = 0; i < numeros.length; i++) {
-    document.write("<li>" + numeros[i] + "</li>");
+    document.write("<li class='list-group-item'>" + numeros[i] + "</li>");
   }
   document.write("</ul>");
 </script>
@@ -45,7 +46,7 @@
 <script>
   var dia = new Date().getDay();
   var mensaje = (dia === 0 || dia === 6) ? "¡Es fin de semana!" : "¡Es día laboral!";
-  document.write("<p>" + mensaje + "</p>");
+  document.write("<p class='mt-3'>" + mensaje + "</p>");
 </script>
 
 <!-- Objetos -->
@@ -55,17 +56,17 @@
     edad: 30,
     profesion: "Desarrollador"
   };
-  document.write("<p>Nombre: " + persona.nombre + ", Edad: " + persona.edad + ", Profesión: " + persona.profesion + "</p>");
+  document.write("<p class='mt-3'>Nombre: " + persona.nombre + ", Edad: " + persona.edad + ", Profesión: " + persona.profesion + "</p>");
 </script>
 
 <!-- Arrays -->
 <script>
   var frutas = ["Manzana", "Plátano", "Fresa"];
-  document.write("<p>Frutas:</p>");
-  document.write("<ul>");
+  document.write("<p class='mt-3'>Frutas:</p>");
+  document.write("<ul class='list-group'>");
   // Bucle for para escribir las frutas en una lista
   for (var j = 0; j < frutas.length; j++) {
-    document.write("<li>" + frutas[j] + "</li>");
+    document.write("<li class='list-group-item'>" + frutas[j] + "</li>");
   }
   document.write("</ul>");
 </script>
@@ -75,30 +76,30 @@
   var correo = "usuario@example.com";
   var patron = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   var valido = patron.test(correo);
-  document.write("<p>Correo electrónico válido: " + valido + "</p>");
+  document.write("<p class='mt-3'>Correo electrónico válido: " + valido + "</p>");
 </script>
 
 <!-- LocalStorage -->
 <script>
   localStorage.setItem("visitas", 1 + (localStorage.getItem("visitas") || 0));
-  document.write("<p>Visitas: " + localStorage.getItem("visitas") + "</p>");
+  document.write("<p class='mt-3'>Visitas: " + localStorage.getItem("visitas") + "</p>");
 </script>
 
-<h1>Más Ejemplos JavaScript</h1>
+<h1 class="mt-5">Más Ejemplos JavaScript con Bootstrap</h1>
 
 <!-- Manipulación del DOM -->
-<button onclick="agregarElemento()">Agregar Elemento</button>
-<ul id="lista">
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
+<button class="btn btn-primary" onclick="agregarElemento()">Agregar Elemento</button>
+<ul id="lista" class="list-group mt-3">
+  <li class="list-group-item">Elemento 1</li>
+  <li class="list-group-item">Elemento 2</li>
+  <li class="list-group-item">Elemento 3</li>
 </ul>
 
 <!-- Eventos -->
-<div onmouseover="mostrarMensaje()">Pasa el mouse aquí</div>
-<form onsubmit="return validarFormulario()">
-  <input type="text" id="correo" placeholder="Correo electrónico">
-  <button type="submit">Enviar</button>
+<div class="mt-3" onmouseover="mostrarMensaje()">Pasa el mouse aquí</div>
+<form class="mt-3" onsubmit="return validarFormulario()">
+  <input type="text" id="correo" class="form-control" placeholder="Correo electrónico">
+  <button type="submit" class="btn btn-primary mt-3">Enviar</button>
 </form>
 
 <!-- Funciones -->
@@ -129,11 +130,11 @@
 <!-- Arrays -->
 <script>
   var colores = ["rojo", "verde", "azul"];
-  document.write("<p>Colores:</p>");
-  document.write("<ul>");
+  document.write("<p class='mt-3'>Colores:</p>");
+  document.write("<ul class='list-group'>");
   // Utilizando forEach para escribir los colores en una lista
   colores.forEach(function(color) {
-    document.write("<li>" + color + "</li>");
+    document.write("<li class='list-group-item'>" + color + "</li>");
   });
   document.write("</ul>");
 </script>
@@ -143,12 +144,12 @@
   var cadena = "Hola mundo123";
   var patron = /\d+/;
   var resultado = patron.test(cadena);
-  document.write("<p>La cadena contiene números: " + resultado + "</p>");
+  document.write("<p class='mt-3'>La cadena contiene números: " + resultado + "</p>");
 </script>
 
 <!-- Animaciones -->
-<div id="caja" style="width: 100px; height: 100px; background-color: red;"></div>
-<button onclick="animarCaja()">Animar Caja</button>
+<div id="caja" class="mt-3" style="width: 100px; height: 100px; background-color: red;"></div>
+<button class="btn btn-primary mt-3" onclick="animarCaja()">Animar Caja</button>
 
 <!-- Manejo de errores -->
 <script>
@@ -170,6 +171,9 @@
     caja.style.backgroundColor = "blue";
   }
 </script>
+
+<!-- Bootstrap JS (opcional, si necesitas funcionalidades de Bootstrap que requieran JavaScript) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
