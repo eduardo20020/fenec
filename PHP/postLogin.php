@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         require "conexion.php";
 
         // Consulta SQL para verificar si el usuario existe en la base de datos
-        $sql = "SELECT * FROM usuarios WHERE usuarios = ? LIMIT 1";
+        $sql = "SELECT * FROM usuarios WHERE usuarios = ?";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$usuario]);
         $resultado = $stmt->fetch();
