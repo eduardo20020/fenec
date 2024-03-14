@@ -30,8 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insertamos el nuevo usuario en la base de datos
     $sql = "INSERT INTO usuarios (usuarios, password, rol) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT); // Hasheamos la contraseña
-    $stmt->execute([$usuario, $hashedPassword, $rol]);
+    $stmt->execute([$usuario, $password, $rol]);
     if ($stmt->rowCount() > 0) {
         echo "Registro exitoso.";
     } else {
